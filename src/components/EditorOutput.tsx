@@ -1,12 +1,11 @@
+"use client"
+
 import dynamic from "next/dynamic"
 import Image from "next/image"
 import { FC } from "react"
 
 const Output = dynamic(
-  async () => (await import("editorjs-react-renderer")).default,
-  {
-    ssr: false,
-  }
+  async () => (await import("editorjs-react-renderer")).default
 )
 
 interface EditorOutputProps {
@@ -38,8 +37,6 @@ const EditorOutput: FC<EditorOutputProps> = ({ content }) => {
 }
 
 function CustomCodeRenderer({ data }: any) {
-  data
-
   return (
     <pre className="bg-gray-800 rounded-md p-4">
       <code className="text-gray-100 text-sm">{data.code}</code>
