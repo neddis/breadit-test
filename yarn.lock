@@ -313,17 +313,17 @@
     picocolors "^1.0.0"
     tslib "^2.5.0"
 
-"@prisma/client@^4.14.1":
-  version "4.15.0"
-  resolved "https://registry.npmjs.org/@prisma/client/-/client-4.15.0.tgz"
-  integrity sha512-xnROvyABcGiwqRNdrObHVZkD9EjkJYHOmVdlKy1yGgI+XOzvMzJ4tRg3dz1pUlsyhKxXGCnjIQjWW+2ur+YXuw==
+"@prisma/client@^4.16.1":
+  version "4.16.1"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-4.16.1.tgz#030bf59ee51f223bae2a8e7c49827528756cf03a"
+  integrity sha512-CoDHu7Bt+NuDo40ijoeHP79EHtECsPBTy3yte5Yo3op8TqXt/kV0OT5OrsWewKvQGKFMHhYQ+ePed3zzjYdGAw==
   dependencies:
-    "@prisma/engines-version" "4.15.0-28.8fbc245156db7124f997f4cecdd8d1219e360944"
+    "@prisma/engines-version" "4.16.0-66.b20ead4d3ab9e78ac112966e242ded703f4a052c"
 
-"@prisma/engines-version@4.15.0-28.8fbc245156db7124f997f4cecdd8d1219e360944":
-  version "4.15.0-28.8fbc245156db7124f997f4cecdd8d1219e360944"
-  resolved "https://registry.npmjs.org/@prisma/engines-version/-/engines-version-4.15.0-28.8fbc245156db7124f997f4cecdd8d1219e360944.tgz"
-  integrity sha512-sVOig4tjGxxlYaFcXgE71f/rtFhzyYrfyfNFUsxCIEJyVKU9rdOWIlIwQ2NQ7PntvGnn+x0XuFo4OC1jvPJKzg==
+"@prisma/engines-version@4.16.0-66.b20ead4d3ab9e78ac112966e242ded703f4a052c":
+  version "4.16.0-66.b20ead4d3ab9e78ac112966e242ded703f4a052c"
+  resolved "https://registry.yarnpkg.com/@prisma/engines-version/-/engines-version-4.16.0-66.b20ead4d3ab9e78ac112966e242ded703f4a052c.tgz#54fd17f9a9080e13e2f75613fd35afb7875e3715"
+  integrity sha512-tMWAF/qF00fbUH1HB4Yjmz6bjh7fzkb7Y3NRoUfMlHu6V+O45MGvqwYxqwBjn1BIUXkl3r04W351D4qdJjrgvA==
 
 "@prisma/engines@4.15.0":
   version "4.15.0"
@@ -789,17 +789,18 @@
     lodash.merge "^4.6.2"
     postcss-selector-parser "6.0.10"
 
-"@tanstack/query-core@4.29.11":
-  version "4.29.11"
-  resolved "https://registry.npmjs.org/@tanstack/query-core/-/query-core-4.29.11.tgz"
-  integrity sha512-8C+hF6SFAb/TlFZyS9FItgNwrw4PMa7YeX+KQYe2ZAiEz6uzg6yIr+QBzPkUwZ/L0bXvGd1sufTm3wotoz+GwQ==
+"@tanstack/query-core@4.29.17":
+  version "4.29.17"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.29.17.tgz#bbef3a30190732ae3554187702f6e34c5caaefd8"
+  integrity sha512-iDbO8yZOpm1lqgq6L8mpxGbKaoiyZSjthxEB3WGU7mNPYss9q4H3Q67+e2xXGwkemEVmtEX/WwvtFitrvVU8TA==
 
-"@tanstack/react-query@^4.29.11":
-  version "4.29.12"
-  resolved "https://registry.npmjs.org/@tanstack/react-query/-/react-query-4.29.12.tgz"
-  integrity sha512-zhcN6+zF6cxprxhTHQajHGlvxgK8npnp9uLe9yaWhGc6sYcPWXzyO4raL4HomUzQOPzu3jLvkriJQ7BOrDM8vA==
+"@tanstack/react-query@^4.29.17":
+  version "4.29.17"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.29.17.tgz#bfd5da849bb7fd1b66eb9d47853ee030864a435e"
+  integrity sha512-udOy/jgqiBHBAP93YPAU3QoVYO+Rtx9HT/10xGDQzC8iQU/wIxcIaT/usX+1NSzoUFYU5hUcPaNErPWZnR7XgA==
   dependencies:
-    "@tanstack/query-core" "4.29.11"
+    "@tanstack/query-core" "4.29.17"
+    client-only "0.0.1"
     use-sync-external-store "^1.2.0"
 
 "@types/editorjs__header@^2.6.0":
@@ -1074,7 +1075,7 @@ axe-core@^4.6.2:
 
 axios@^1.4.0:
   version "1.4.0"
-  resolved "https://registry.npmjs.org/axios/-/axios-1.4.0.tgz"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.4.0.tgz#38a7bf1224cd308de271146038b551d725f0be1f"
   integrity sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA==
   dependencies:
     follow-redirects "^1.15.0"
@@ -2616,7 +2617,7 @@ lru-cache@^6.0.0:
 
 lucide-react@^0.252.0:
   version "0.252.0"
-  resolved "https://registry.npmjs.org/lucide-react/-/lucide-react-0.252.0.tgz"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.252.0.tgz#4fd8829c95456a9de6a3377b395dd412bf8345d7"
   integrity sha512-98hUdm23F3YlC3UN4mzv1FAsWr81YYdxF31cYhm19c51FwOph4dn5B4NjKp45UXBiR1Xx+cKrdmSIZX0ldS8zw==
 
 merge-stream@^2.0.0:
