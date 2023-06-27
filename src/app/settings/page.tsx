@@ -1,4 +1,4 @@
-export const metdata = {
+export const metadata = {
   title: "Settings",
   description: "Manage account and website settings.",
 }
@@ -6,7 +6,6 @@ export const metdata = {
 import UserNameForm from "@/components/UserNameForm"
 import { authOptions, getAuthSession } from "@/lib/auth"
 import { redirect } from "next/navigation"
-import { FC } from "react"
 
 const page = async () => {
   const session = await getAuthSession()
