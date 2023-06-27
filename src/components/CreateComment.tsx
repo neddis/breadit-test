@@ -1,8 +1,8 @@
 "use client"
 
 import { FC, useState } from "react"
-import { Label } from "./ui/label"
-import { Textarea } from "./ui/textarea"
+import { Label } from "./ui/Label"
+import { Textarea } from "./ui/Textarea"
 import { Button } from "./ui/Button"
 import { useMutation } from "@tanstack/react-query"
 import { CommentRequest } from "@/lib/validators/comments"

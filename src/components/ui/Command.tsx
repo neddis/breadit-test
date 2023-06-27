@@ -5,7 +5,7 @@ import { DialogProps } from "@radix-ui/react-dialog"
 import { Command as CommandPrimitive } from "cmdk"
 import { Loader2, Search } from "lucide-react"
 
-import { cn } from "@/lib/utils.ts"
+import { cn } from "@/lib/utils"
 import { Dialog, DialogContent } from "@/components/ui/Dialog"
 
 const Command = React.forwardRef<
