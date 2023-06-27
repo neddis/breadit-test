@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Settings",
-  description: "Manage account and website settings.",
+  //   description: "Manage account and website settings.",
 }
 
 import UserNameForm from "@/components/UserNameForm"
