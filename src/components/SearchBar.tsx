@@ -18,7 +18,7 @@ import debounce from "lodash.debounce"
 
 interface SearchBarProps {}
 
-const SearchBar: FC<SearchBarProps> = async ({}) => {
+const SearchBar: FC<SearchBarProps> = ({}) => {
   const [input, setInput] = useState<string>("")
   const pathname = usePathname()
   const commandRef = useRef<HTMLDivElement>(null)
@@ -67,6 +67,7 @@ const SearchBar: FC<SearchBarProps> = async ({}) => {
       className="relative rounded-lg border max-w-lg z-50 overflow-visible"
     >
       <CommandInput
+        isLoading={isFetching}
         onValueChange={(text) => {
           setInput(text)
           debounceRequest()
