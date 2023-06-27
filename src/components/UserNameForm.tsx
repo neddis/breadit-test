@@ -20,17 +20,20 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/Card"
+import { z } from "zod"
 
 interface UserNameFormProps {
   user: Pick<User, "id" | "username">
 }
+
+type FormData = z.infer<typeof UserNameValidator>
 
 const UserNameForm: FC<UserNameFormProps> = ({ user }) => {
   const {
     handleSubmit,
     register,
     formState: { errors },
-  } = useForm<UserNameRequest>({
+  } = useForm<FormData>({
     resolver: zodResolver(UserNameValidator),
     defaultValues: {
       name: user?.username || "",
@@ -99,7 +102,9 @@ const UserNameForm: FC<UserNameFormProps> = ({ user }) => {
               {...register("name")}
             />
             {errors?.name && (
-              <p className="px-1 text-xs text-red-600">{errors.name.message}</p>
+              <p className="px-1 text-xs text-red-600">
+                {errors.name.message as string}
+              </p>
             )}
           </div>
         </CardContent>

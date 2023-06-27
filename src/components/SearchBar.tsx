@@ -55,8 +55,8 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
     refetch()
   }, 300)
 
-  const debounceRequest = useCallback(() => {
-    request()
+  const debounceRequest = useCallback(async () => {
+    await request()
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -68,7 +68,7 @@ const SearchBar: FC<SearchBarProps> = ({}) => {
     >
       <CommandInput
         isLoading={isFetching}
-        onValueChange={(text) => {
+        onValueChange={(text: string) => {
           setInput(text)
           debounceRequest()
         }}

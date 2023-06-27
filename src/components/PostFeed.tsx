@@ -9,6 +9,7 @@ import { useSession } from "next-auth/react"
 import Post from "./Post"
 import axios from "axios"
 import { Loader2 } from "lucide-react"
+import { Vote } from "@prisma/client"
 
 interface PostFeedProps {
   initialPosts: ExtendedPost[]
@@ -53,14 +54,14 @@ const PostFeed: FC<PostFeedProps> = ({ initialPosts, subredditName }) => {
   return (
     <ul className="flex flex-col col-span-2 space-y-6">
       {posts.map((post, index) => {
-        const votesAmt = post.votes.reduce((acc, vote) => {
+        const votesAmt = post.votes.reduce((acc: number, vote: Vote) => {
           if (vote.type === "UP") return acc + 1
           if (vote.type === "DOWN") return acc - 1
           return acc
         }, 0)
 
         const currentVote = post.votes.find(
-          (vote) => vote.userId === session?.user.id
+          (vote: Vote) => vote.userId === session?.user.id
         )
 
         if (index === posts.length - 1) {
